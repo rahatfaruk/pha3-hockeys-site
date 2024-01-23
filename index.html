@@ -20,8 +20,42 @@
   </style>
 </head>
 <body>
-  <header class="px-4 pt-8">
-    <nav></nav>
+  <header class="px-4">
+    <nav class="mb-2">
+      <div class="navbar container mx-auto p-0 bg-base-100">
+        <!-- small: toggler & menu -->
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-600">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Hockey<span class="text-red-600">&rsquo;</span>s</a>
+        </div>
+        <!-- large: menu, action-btn -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-600">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-ghost"><i class="bi bi-search"></i></a>
+          <a class="btn bg-red-600 text-white">Get Ticket</a>
+        </div>
+      </div>
+
+    </nav>
     <!-- ## section:banner -->
     <section class="banner-sect container mx-auto relative">
       <!-- ### carousel/slider -->
@@ -342,7 +376,7 @@
     </section>
 
     <!-- ## section:contact  -->
-    <section class="faq-sect py-8 px-4">
+    <section class="contact-sect py-8 px-4">
       <div class="container mx-auto">
         <!-- ### header-box -->
         <div class="header-box text-center mx-auto mb-4 border-t-2 border-b-2 border-dashed py-4">
@@ -401,7 +435,7 @@
               </div>
               <textarea class="textarea bg-gray-200 h-24" placeholder="Message"></textarea>
             </label>
-            <button class="btn bg-orange-600 text-white w-full lg:col-span-2" type="submit">Button</button>
+            <button class="btn bg-orange-600 text-white w-full lg:col-span-2" type="submit">Send Message</button>
           </form>
         </div>
 
@@ -419,8 +453,8 @@
     </section>
 
     <footer class="bg-gray-800">
-      <div class="container mx-auto footer place-items-stretch grid-cols-2 lg:grid-cols-none p-10 text-white text-base-content">
-        <aside class="place-items-center col-span-2 md:col-span-full text-center lg:place-items-start lg:text-left">
+      <div class="container mx-auto footer place-items-stretch grid-cols-2 lg:grid-cols-4 p-10 text-white text-base-content">
+        <aside class="place-items-center col-span-2 md:col-span-1 text-center lg:place-items-start lg:text-left">
           <h2 class="font-bold text-xl">Get In Touch</h2>
           <p class="max-w-xs">Here we will play not only for us but for our nation. Our player are our heroes. So, visit with our heroes.</p>
           <a href="#"><i class="bi bi-envelope text-orange-600 mr-2"></i> hockeys@support.com</a>
@@ -440,7 +474,7 @@
           <a class="link link-hover">Ticket Support</a>
           <a class="link link-hover">Contact Us</a>
         </nav>
-        <nav class="place-items-center col-span-2 md:col-span-full text-center lg:place-items-start lg:text-left">
+        <nav class="place-items-center col-span-2 md:col-span-1 text-center lg:place-items-start lg:text-left">
           <header class="footer-title">Services</header> 
           <a class="link link-hover">Branding</a>
           <a class="link link-hover">Design</a>
